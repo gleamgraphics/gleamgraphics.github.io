@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jeremy Mecham's AngularJS Portfolio">
+    <meta name="author" content="Jeremy Mecham">
+
+    <title>Gleam Graphics | JeremyMecham.Com</title>
+<link rel='shortcut icon' href='http://gleamgraphics.com/img/favicon.png' type='image/png'>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+<!-- Angular JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
+<!-- Angular Bootstrap Lightbox -->
+<link rel="stylesheet" href="css/angular-bootstrap-lightbox.min.css">
+<script src="js/angular-bootstrap-lightbox.min.js"></script>
+<!-- load myapp -->
+<script src="app/app.js"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="MainCtrl">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-init="navCollapsed=true" ng-click="navbarCollapsed = !navbarCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jeremy Mecham - Gleam Graphics</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
+            <ul class="nav navbar-nav" bs-active-link>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/work">Work</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div ng-view>
+            <!-- content is injected here -->
+        </div>
+            <hr>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Your Website 2016</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+        </div>
+        <!-- /.container -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+</body>
+
+</html>
